@@ -1,8 +1,8 @@
 import logoFoot from "../../assets/icons/logofoot.png";
-import iconWapp from "../../assets/icons/iconWapp.png";
-import iconEmail from "../../assets/icons/iconEmail.png";
-import iconIg from "../../assets/icons/iconIg.png";
-import iconFb from "../../assets/icons/iconFb.png";
+import iconWapp from "../../assets/icons/whatsapp.svg";
+import iconEmail from "../../assets/icons/envelope.svg";
+import iconIg from "../../assets/icons/instagram.svg";
+import iconFb from "../../assets/icons/facebook.svg";
 
 const Footer = () => {
 

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { List, X } from "@phosphor-icons/react";
-import logo from "../../assets/icons/logonav.png"
+import logo from "../../assets/icons/logotodoenmarmol.svg"
 import './Nav.css'
 
 const Nav = () => {
@@ -20,7 +20,7 @@ const Nav = () => {
   return (
     <header>        
        <nav className="nav border-b-2 ">
-            <a href='/' className="navLogo"><img src={logo} alt="" /></a>
+            <a href='/' className="navLogo w-[140px] h-auto"><img src={logo} alt="" className='w-full h-full object-cover' /></a>
             <ul className="navBox">
                 <li><a href="/" className={selectedOption === 'inicio' ? 'navBoxLink active' : 'navBoxLink'} onClick={() => handleOptionClick('inicio')}>Inicio</a></li>
                 <li><a href="#servicios" className={selectedOption === 'servicios' ? 'navBoxLink active' : 'navBoxLink'} onClick={() => handleOptionClick('servicios')}>Servicios</a></li>
