@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url("../src/assets/images/tm.jpg");
+    
+    font-family: 'Manrope Variable', sans-serif;
+    color: #4A494A;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-size: cover;
+    height: 600px;
+    overflow: hidden;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+@layer components {
+  .responsiveWeb {
+    @apply px-5 md:px-10 lg:px-20;
+  }
+}

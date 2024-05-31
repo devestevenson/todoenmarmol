@@ -1,0 +1,131 @@
+/* ESTILOS PARA LA BARRA DE NAVEGACIÓN */
+.nav {
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* ESTILOS UL HORIZONTAL */
+.navBox {
+    display: flex;
+    align-items: center;
+}
+.navBoxLink {
+    color: #4A494A;
+    font-size: 18px;
+    transition: 300ms ease;
+    border: 1px solid transparent;
+    padding: 2px 12px;
+    border-radius: 99px;
+    font-family: 'Manrope Variable', sans-serif;
+
+}
+.navBoxLink:hover,
+.navBoxLink.active {
+    border: 1px solid #4A494A;
+}
+
+/* ESTILOS BOTON DE CONTRATAR-SERVICIOS */
+.navButtonHireServices {
+    color: #4A494A;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: scale 300ms;
+    font-family: 'poppinsRegular';
+
+}
+.navButtonHireServices:hover,
+.navButtonHireServices.active {
+    background-color: #FFFFFF;
+}
+
+/* ESTILOS BOTON-HAMBURGER */
+.navButtonHamburger {
+    width: 40px;
+    height: 40px;
+
+    display: none;
+
+    
+    border-radius: 4px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 300ms;
+    
+}
+.navButtonHamburger:hover {
+    border: 1px solid #4A494A;
+}
+
+
+/* ESTILOS MENÚ DROPDOWN */
+.navDropdown {
+    display: none;
+
+    position: absolute;
+    top: 80px;
+    right: 20px;
+
+    width: 250px;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.108);
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+    overflow: hidden;
+
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 99;
+}
+.navDropdown.openNav {
+    height: 210px;
+    padding: 24px 0;
+}
+.navDropdown li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navDropdown .navButtonHireServices {
+    margin-top: 2px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+/* RESPONSIVE DESIGN PARA EL MENÚ (BARRA DE NACEGACIÓN) */
+@media (max-width: 768px) {
+    .navBox,
+    .navButtonHireServices {
+        display: none;
+    }
+    .navBoxLink {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navButtonHamburger {
+        display: block;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navDropdown {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .navDropdown {
+        left: 20px;
+        width: unset;
+    }
+}
